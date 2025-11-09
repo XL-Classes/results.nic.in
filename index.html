@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XL CLASSES || LEARN TODAY LEAD TOMORROW</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="assets/favicon2.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        :root {
+            --bg: #0b0f14;
+            --panel: #0f1620;
+            --muted: #1b2430;
+            --text: #e5e7eb;
+            --text-dim: #a3b1c6;
+            --accent: #7c3aed;
+            --accent-2: #14b8a6;
+            --border: #1f2937;
+            --ring: #2563eb;
+            --shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+            --radius: 14px;
+            --speed: 180ms;
+        }
+
+        html,
+        body {
+            background:
+                radial-gradient(1200px 800px at 10% -10%, rgba(124, 58, 237, .12), transparent 60%),
+                radial-gradient(1000px 700px at 90% 10%, rgba(20, 184, 166, .10), transparent 60%),
+                var(--bg);
+            color: var(--text);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: min(1200px, 92vw);
+        }
+
+        .custom-navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1030;
+            background: rgba(15, 22, 32, 0.7) !important;
+            backdrop-filter: saturate(120%) blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .custom-navbar .navbar-brand {
+            letter-spacing: .4px;
+        }
+
+        .custom-navbar .nav-link {
+            color: var(--text-dim) !important;
+            position: relative;
+            transition: color var(--speed) ease;
+            padding-inline: clamp(.5rem, 1.2vw, .85rem);
+        }
+
+        .custom-navbar .nav-link:hover,
+        .custom-navbar .nav-link:focus {
+            color: var(--text) !important;
+        }
+
+        .custom-navbar .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 10%;
+            right: 10%;
+            bottom: 6px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--accent), var(--accent-2));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform var(--speed) ease;
+            border-radius: 2px;
+        }
+
+        .custom-navbar .nav-link:hover::after,
+        .custom-navbar .nav-link:focus::after {
+            transform: scaleX(1);
+        }
+
+        .navbar-toggler {
+            border-color: var(--border) !important;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, .35);
+        }
+
+        .dropdown-menu {
+            background: var(--panel);
+            border: 1px solid var(--border);
+        }
+
+        .dropdown-item {
+            color: var(--text-dim);
+            transition: background var(--speed) ease, color var(--speed) ease;
+        }
+
+        .dropdown-item:hover,
+        .dropdown-item:focus {
+            background: var(--muted);
+            color: var(--text);
+        }
+
+        .notice-bar {
+            background: linear-gradient(90deg, rgba(124, 58, 237, .15), rgba(20, 184, 166, .15));
+            border-bottom: 1px solid var(--border);
+        }
+
+        .notice-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            padding: .5rem .9rem;
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            background: rgba(255, 255, 255, .04);
+            color: var(--text);
+            box-shadow: var(--shadow);
+        }
+
+        .notice-text {
+            color: var(--text-dim);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .hero-section {
+            background:
+                radial-gradient(900px 400px at 20% 0%, rgba(124, 58, 237, 0.18), transparent 60%),
+                radial-gradient(900px 400px at 80% 10%, rgba(20, 184, 166, 0.16), transparent 60%);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .hero-section h1 {
+            line-height: 1.1;
+            letter-spacing: .3px;
+            font-size: clamp(2rem, 5vw, 3.25rem);
+            background: linear-gradient(180deg, #fff, #cbd5e1 60%, #64748b);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .hero-section .lead {
+            color: var(--text-dim);
+            font-size: clamp(1rem, 2.2vw, 1.25rem);
+        }
+
+        .btn {
+            border-radius: var(--radius);
+            transition: transform var(--speed) ease, box-shadow var(--speed) ease, background var(--speed) ease, border-color var(--speed) ease;
+        }
+
+        .btn-light {
+            color: var(--text);
+            background: linear-gradient(180deg, rgba(255, 255, 255, .08), rgba(255, 255, 255, .04));
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+        }
+
+        .btn-light:hover,
+        .btn-light:focus {
+            transform: translateY(-1px);
+            background: linear-gradient(180deg, rgba(255, 255, 255, .12), rgba(255, 255, 255, .06));
+            box-shadow: 0 10px 28px rgba(0, 0, 0, .45);
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, var(--accent), var(--accent-2));
+            border: 1px solid transparent;
+            box-shadow: var(--shadow);
+        }
+
+        .btn-primary:hover,
+        .btn-primary:focus {
+            filter: brightness(1.05);
+            transform: translateY(-1px);
+        }
+
+        .btn-lg {
+            padding: clamp(.6rem, 1.5vw, .9rem) clamp(1rem, 2.5vw, 1.5rem);
+        }
+
+        .card {
+            background: linear-gradient(180deg, rgba(255, 255, 255, .02), rgba(255, 255, 255, .01));
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            transition: transform var(--speed) ease, box-shadow var(--speed) ease, border-color var(--speed) ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 36px rgba(0, 0, 0, .45);
+            border-color: rgba(124, 58, 237, .35);
+        }
+
+        .card .card-body i {
+            background: linear-gradient(180deg, var(--accent), var(--accent-2));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .card .card-body h5 {
+            color: var(--text);
+        }
+
+        .card .card-body p {
+            color: var(--text-dim);
+        }
+
+        .stats-strip .stat {
+            background: rgba(255, 255, 255, .03);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1rem;
+        }
+
+        .stats-strip .value {
+            font-size: clamp(1.4rem, 3.5vw, 2rem);
+            font-weight: 800;
+        }
+
+        .stats-strip .label {
+            color: var(--text-dim);
+        }
+
+        section.py-5 {
+            padding-block: clamp(2rem, 6vw, 4rem) !important;
+        }
+
+        .cta-section {
+            background: linear-gradient(180deg, rgba(15, 22, 32, .6), rgba(15, 22, 32, .8));
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .cta-section .lead {
+            color: var(--text-dim);
+        }
+
+        .faq .accordion-item {
+            background: rgba(255, 255, 255, .03);
+            border: 1px solid var(--border);
+            border-radius: var(--radius) !important;
+            overflow: hidden;
+        }
+
+        .faq .accordion-button {
+            background: rgba(255, 255, 255, .02);
+            color: var(--text);
+        }
+
+        .faq .accordion-button:not(.collapsed) {
+            color: var(--text);
+            background: rgba(124, 58, 237, .12);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .faq .accordion-body {
+            color: var(--text-dim);
+        }
+
+        footer.bg-dark {
+            background: #0a0f15 !important;
+            border-top: 1px solid var(--border);
+        }
+
+        footer a {
+            color: var(--text-dim) !important;
+        }
+
+        footer a:hover,
+        footer a:focus {
+            color: var(--text) !important;
+            text-decoration: none;
+        }
+
+        .social a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 1px solid var(--border);
+            background: rgba(255, 255, 255, .02);
+            transition: transform var(--speed) ease, border-color var(--speed) ease, background var(--speed) ease;
+        }
+
+        .social a:hover,
+        .social a:focus {
+            transform: translateY(-2px);
+            background: rgba(124, 58, 237, .12);
+            border-color: rgba(124, 58, 237, .45);
+        }
+
+        @media (max-width: 991.98px) {
+            .custom-navbar .navbar-collapse {
+                background: rgba(15, 22, 32, .9);
+                border: 1px solid var(--border);
+                border-radius: var(--radius);
+                padding: .75rem;
+                margin-top: .5rem;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                transition: none !important;
+                animation: none !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        :focus-visible {
+            outline: 2px solid var(--ring);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm custom-navbar">
+        <div class="container">
+            <!-- Brand / Logo -->
+            <a class="navbar-brand fw-bold fs-4" href="./index.html">XL Coaching Classes</a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="./contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="./result.html">Results</a>
+                    </li>
+                    <!-- ✅ Gallery Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-semibold dropdown-toggle" href="#" id="galleryDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Gallery
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow-lg rounded-3 border-0"
+                            aria-labelledby="galleryDropdown">
+                            <li><a class="dropdown-item py-2" href="./photos.html">📷 Photos</a></li>
+                            <li><a class="dropdown-item py-2" href="./videos.html">🎥 Videos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero-section py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold pb-2">Welcome to XL Coaching Classes</h1>
+            <p class="lead mt-3">Empowering students with quality education and guidance to achieve excellence.</p>
+            <a href="./about.html" class="btn btn-light btn-lg mt-3">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="py-4">
+        <div class="container stats-strip">
+            <div class="row g-3 text-center">
+                <div class="col-6 col-md-3">
+                    <div class="stat">
+                        <div class="value text-success">95%</div>
+                        <div class="label">Pass Percentage</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat">
+                        <div class="value text-primary">82%</div>
+                        <div class="label">Average Score</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat">
+                        <div class="value text-warning">50+</div>
+                        <div class="label">Distinctions</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat">
+                        <div class="value" style="color:#14b8a6;">1:20</div>
+                        <div class="label">Teacher : Student</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <i class="bi bi-book-half display-4 text-primary mb-3"></i>
+                            <h5 class="fw-bold">Expert Faculty</h5>
+                            <p>Learn from highly qualified and experienced teachers who care about your success.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <i class="bi bi-people display-4 text-primary mb-3"></i>
+                            <h5 class="fw-bold">Personal Attention</h5>
+                            <p>We focus on every student individually to help them improve and excel.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <i class="bi bi-trophy display-4 text-primary mb-3"></i>
+                            <h5 class="fw-bold">Proven Results</h5>
+                            <p>Consistent track record of top results in board exams and competitive tests.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials (Carousel) -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-4">What Students Say</h2>
+            <div id="testiCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card mx-auto" style="max-width:800px;">
+                            <div class="card-body">
+                                <p class="mb-2">"XL Coaching Classes ne meri preparation ko next level pe le gaya.
+                                    Teachers bahut supportive the!"</p>
+                                <h6 class="fw-bold text-end text-success mb-0">— Akshita, Class 12th</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mx-auto" style="max-width:800px;">
+                            <div class="card-body">
+                                <p class="mb-2">"Regular tests aur doubt sessions ki wajah se mere marks improve hue.
+                                    Thank you XL Classes!"</p>
+                                <h6 class="fw-bold text-end text-success mb-0">— Bhawani Pratap Singh, Class 10th</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center gap-3 mt-3">
+                    <button class="btn btn-light btn-sm" data-bs-target="#testiCarousel" data-bs-slide="prev"><i
+                            class="bi bi-arrow-left"></i></button>
+                    <button class="btn btn-light btn-sm" data-bs-target="#testiCarousel" data-bs-slide="next"><i
+                            class="bi bi-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA Section -->
+    <section class="cta-section text-center py-5">
+        <div class="container">
+            <h2 class="fw-bold">Check Your Results Now</h2>
+            <p class="lead">Enter your roll number and see your exam performance instantly.</p>
+            <a href="./result.html" class="btn btn-primary btn-lg">View Results</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center mt-5 pt-4 pb-3">
+        <div class="container">
+
+            <!-- Copyright -->
+            <p class="mb-2 fw-semibold small">
+                © 2025 XL Coaching Classes. All rights reserved.
+            </p>
+
+            <!-- Quick Links -->
+            <div class="row justify-content-center mb-3">
+                <div class="col-auto">
+                    <a href="./index.html" class="text-white text-decoration-none me-3">Home</a>
+                    <a href="./about.html" class="text-white text-decoration-none me-3">About</a>
+                    <a href="./contact.html" class="text-white text-decoration-none me-3">Contact</a>
+                    <a href="./result.html" class="text-white text-decoration-none">Results</a>
+                </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="d-flex justify-content-center gap-4 social">
+                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/xl_classes" aria-label="Instagram"><i
+                        class="bi bi-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- <script src="script.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap Icons (for social media icons) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</body>
+
+</html>

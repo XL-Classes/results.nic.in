@@ -1,0 +1,144 @@
+:root {
+    --bg: #0b0f14;
+    --panel: #0f1620;
+    --muted: #1b2430;
+    --text: #e5e7eb;
+    --text-dim: #a3b1c6;
+    --accent: #7c3aed;
+    --accent-2: #14b8a6;
+    --border: #1f2937;
+    --ring: #2563eb;
+    --radius: 14px;
+    --speed: 180ms;
+}
+
+/* Navbar Brand */
+.custom-navbar .navbar-brand {
+    color: var(--text) !important;
+    transition: color var(--speed) ease-in-out;
+}
+
+.custom-navbar .navbar-brand:hover {
+    color: #ffd700 !important;
+}
+
+/* Nav Links (unified) */
+.custom-navbar .nav-link,
+.navbar-nav .nav-link {
+    position: relative;
+    display: inline-block;
+    font-weight: 600;
+    color: var(--text-dim) !important;
+    text-decoration: none;
+    padding: 8px 12px;
+    margin: 0 6px;
+    transition: color var(--speed) ease;
+    font-size: 1rem;
+}
+
+.custom-navbar .nav-link:hover,
+.navbar-nav .nav-link:hover {
+    color: var(--text) !important;
+}
+
+/* Underline (subtle, matches text width) */
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    transition: transform var(--speed) ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+/* Dropdown */
+.custom-navbar .dropdown-menu {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 6px 0;
+    min-width: 180px;
+}
+
+.custom-navbar .dropdown-item {
+    font-weight: 500;
+    padding: 10px 14px;
+    color: var(--text-dim);
+    border-radius: 8px;
+    transition: background var(--speed) ease, color var(--speed) ease, transform var(--speed) ease;
+}
+
+.custom-navbar .dropdown-item:hover {
+    background: var(--muted);
+    color: var(--text);
+    transform: translateX(4px);
+}
+
+/* Footer */
+footer {
+    background: #0a0f15;
+    color: #fff;
+}
+
+footer p {
+    letter-spacing: .3px;
+    font-size: .9rem;
+    opacity: .9;
+}
+
+footer a {
+    color: var(--text-dim) !important;
+    font-weight: 500;
+    transition: color var(--speed) ease, transform var(--speed) ease;
+}
+
+footer a:hover {
+    color: #ffc107 !important;
+    transform: translateY(-2px);
+}
+
+footer .bi {
+    transition: transform var(--speed) ease, color var(--speed) ease;
+}
+
+footer .bi:hover {
+    color: #ffc107;
+    transform: scale(1.1);
+}
+
+/* Hero + CTA (clean, no heavy animations) */
+.hero-section,
+.cta-section {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(124, 58, 237, .25), rgba(20, 184, 166, .2));
+}
+
+.hero-section h1,
+.cta-section h3 {
+    text-shadow: 0 2px 12px rgba(0, 0, 0, .35);
+}
+
+.hero-section .btn,
+.cta-section .btn {
+    font-weight: 600;
+    transition: transform var(--speed) ease, box-shadow var(--speed) ease, background var(--speed) ease, color var(--speed) ease;
+}
+
+.hero-section .btn:hover,
+.cta-section .btn:hover {
+    background: #ffc107;
+    color: #000 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .25);
+}
