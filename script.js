@@ -410,7 +410,7 @@ const resultsData = {
                 Science: "Absent"
             },
 
-            teacherMessage1: "Antima, tumhari school performance already bohot strong hai. Is test me kuch chapters tumne abhi cover nahi kiye the, isliye result tumhari actual capability ko nahi dikhata. Jaise-jaise tum chapters complete karogi, waise-waise tum apni original strength ke saath perform karogi. Tumse acchi expectations hain, bas regular practice jaari rakho.",
+            teacherMessage1: "Antima, tumhari school performance already bohot strong hai. Is test me kuch chapters tumne abhi cover nahi kiye the, isliye result tumhari actual capability ko nahi dikhata. Jaise-jaise tum chapters complete karogi, waise-waise tum apni original strength ke saath perform karogi. Tumse acchi expectations hain, bas regular practice jaari rakho.",
             teacherMessage2: "Inside you is a topper waiting to be unleashed",
         },
         232503: {
@@ -420,7 +420,7 @@ const resultsData = {
                 Science: 18 + " / 50",
             },
 
-            teacherMessage1: "Babita, tumne effort dikhaya hai aur mujhe pata hai ki tum apna result aur better karne ki capability rakhti ho. Ab thoda aur focus aur practice ke saath tum definitely agle test me improvement laa sakti ho. Bas regularity banaye rakho, progress zaroor milegi",
+            teacherMessage1: "Babita, tumne effort dikhaya hai aur mujhe pata hai ki tum apna result aur better karne ki capability rakhti ho. Ab thoda aur focus aur practice ke saath tum definitely agle test me improvement laa sakti ho. Bas regularity banaye rakho, progress zaroor milegi",
             teacherMessage2: "Every mark you gain is proof of your progress",
         },
         232504: {
@@ -430,7 +430,7 @@ const resultsData = {
                 Science: 39 + " / 50",
             },
 
-            teacherMessage1: "Bhavya, tumne 50 me se 35 marks laakar 4th rank secure ki hai 👍. Yeh ek acchi shuruaat hai, aur tum clearly potential dikhate ho. Agar thoda aur regular practice aur focus doge toh agle test me tum easily top ranks me aa sakte ho. Keep working hard!",
+            teacherMessage1: "Bhavya, tumne 50 me se 35 marks laakar 4th rank secure ki hai 👍. Yeh ek acchi shuruaat hai, aur tum clearly potential dikhate ho. Agar thoda aur regular practice aur focus doge toh agle test me tum easily top ranks me aa sakte ho. Keep working hard!",
             teacherMessage2: "Stay focused, revise smartly, and believe in your potential – because your best is yet to come",
         },
         232505: {
@@ -450,7 +450,7 @@ const resultsData = {
                 Science: 46 + " / 50",
             },
 
-            teacherMessage1: "Kanishka, 50 me se 47 laakar tumne first rank hasil ki hai 👏. Yeh result tumhari lagataar practice aur focus ka nateeja hai. Is speed aur discipline ko banaye rakho, tum aur aage badhogi. Proud of you!",
+            teacherMessage1: "Kanishka, 50 me se 47 laakar tumne first rank hasil ki hai 👏. Yeh result tumhari lagataar practice aur focus ka nateeja hai. Is speed aur discipline ko banaye rakho, tum aur aage badhogi. Proud of you!",
             teacherMessage2: "Your hard work has made you stand out, and with the same focus, crossing 50/50 is just a matter of time.",
         },
         232507: {
@@ -460,8 +460,8 @@ const resultsData = {
                 Science: 12 + " / 50",
             },
 
-            teacherMessage1: "Krishna, tumhara base abhi weak hai aur coaching regular attend na karne ki wajah se is test me marks kam aaye. Agar tum regular aaoge aur basics pe focus karoge toh dheere-dheere tumhari performance improve ho jaayegi. Consistency hi sabse important hai.",
-            teacherMessage2: "This score is not your limit – it’s your launchpad. Work with consistency, learn from mistakes, and push yourself a little more every day",
+            teacherMessage1: "Krishna, tumhara base abhi weak hai aur coaching regular attend na karne ki wajah se is test me marks kam aaye. Agar tum regular aaoge aur basics pe focus karoge toh dheere-dheere tumhari performance improve ho jaayegi. Consistency hi sabse important hai.",
+            teacherMessage2: "This score is not your limit – it's your launchpad. Work with consistency, learn from mistakes, and push yourself a little more every day",
         },
         232508: {
             name: "Manisha Meena",
@@ -479,7 +479,7 @@ const resultsData = {
                 Mathematics: "Absent",
                 Science: "Absent",
             },
-            teacherMessage1: "Is test me aap  absent the. Yaad rakho, har test ek mauka hai apni progress samajhne ka. Regular rehna hi success ki key hai — agli baar koi bhi test miss na ho.",
+            teacherMessage1: "Is test me aap  absent the. Yaad rakho, har test ek mauka hai apni progress samajhne ka. Regular rehna hi success ki key hai — agli baar koi bhi test miss na ho.",
             teacherMessage2: "Inside you is a topper waiting to be unleashed",
 
         },
@@ -500,7 +500,7 @@ const resultsData = {
                 Science: 18 + " / 50",
             },
 
-            teacherMessage1: "Is test me aap  absent the. Yaad rakho, har test ek mauka hai apni progress samajhne ka. Regular rehna hi success ki key hai — agli baar koi bhi test miss na ho. ",
+            teacherMessage1: "Is test me aap  absent the. Yaad rakho, har test ek mauka hai apni progress samajhne ka. Regular rehna hi success ki key hai — agli baar koi bhi test miss na ho. ",
             teacherMessage2: "You are always bigger than the numbers on your answer sheet",
         },
         232512: {
@@ -511,7 +511,7 @@ const resultsData = {
             },
 
             teacherMessage1: "Roshan, abhi result weak aaya hai lekin tumhare paas improve karne ka full chance hai. Basics par focus karo aur regular practice se tum zaroor better karoge.",
-            teacherMessage2: "Believe in your hidden strength – it’s far greater than you think",
+            teacherMessage2: "Believe in your hidden strength – it's far greater than you think",
         },
         232513: {
             name: "Saksham Kumawat",
@@ -530,7 +530,7 @@ const resultsData = {
                 Science: 27 + " / 50",
             },
 
-            teacherMessage1: "Sarthak Bansal, tumne is test me apne effort dikhaye hain. Tumhare andar aur better karne ki poori capability hai. Agar tum thoda aur regular practice aur focus doge toh agle test me tum apni performance aur strong bana paoge. Keep working consistently!",
+            teacherMessage1: "Sarthak Bansal, tumne is test me apne effort dikhaye hain. Tumhare andar aur better karne ki poori capability hai. Agar tum thoda aur regular practice aur focus doge toh agle test me tum apni performance aur strong bana paoge. Keep working consistently!",
             teacherMessage2: "Your brain is a powerhouse; unlock it with focus and hard work",
         },
         232515: {
@@ -541,7 +541,7 @@ const resultsData = {
             },
 
             teacherMessage1: "Simran, tumne 50 me se 44 marks laakar second rank secure ki hai 👍. Tumhari mehnat clearly dikh rahi hai. Agar isi consistency ko aur thoda push dogi toh tum easily first rank tak pahunch sakti ho. Keep it up!",
-            teacherMessage2: "Success is not only about the marks, it’s about the journey of discipline, growth, and self-belief that got you here. Be consistent to the top",
+            teacherMessage2: "Success is not only about the marks, it's about the journey of discipline, growth, and self-belief that got you here. Be consistent to the top",
         },
         232516: {
             name: "Simran Verma",
@@ -550,7 +550,7 @@ const resultsData = {
                 Science: 25 + " / 50",
             },
 
-            teacherMessage1: "Is test me aap  absent the. Yaad rakho, har test ek mauka hai apni progress samajhne ka. Regular rehna hi success ki key hai — agli baar koi bhi test miss na ho.",
+            teacherMessage1: "Is test me aap  absent the. Yaad rakho, har test ek mauka hai apni progress samajhne ka. Regular rehna hi success ki key hai — agli baar koi bhi test miss na ho.",
             teacherMessage2: "You hold more power inside than any exam can measure",
         },
         232517: {
@@ -561,7 +561,7 @@ const resultsData = {
             },
 
             teacherMessage1: "Subhan, tumne 50 me se 39 marks laakar third rank hasil ki hai 👏. Yeh ek strong performance hai, bas thoda aur regular practice karoge toh tum aur upar jaa sakte ho. Apne effort ko aise hi banaye rakho, improvement pakka hoga.",
-            teacherMessage2: "You’re already standing close to excellence, and with a little more consistency, you can easily touch the peak",
+            teacherMessage2: "You're already standing close to excellence, and with a little more consistency, you can easily touch the peak",
         },
         232518: {
             name: "Tanishka Mishra",
@@ -580,7 +580,7 @@ const resultsData = {
                 Science: 10 + " / 50",
             },
 
-            teacherMessage1: "Is test me aap  absent the. Yaad rakho, har test ek mauka hai apni progress samajhne ka. Regular rehna hi success ki key hai — agli baar koi bhi test miss na ho.",
+            teacherMessage1: "Is test me aap  absent the. Yaad rakho, har test ek mauka hai apni progress samajhne ka. Regular rehna hi success ki key hai — agli baar koi bhi test miss na ho.",
             teacherMessage2: "Inside you is a topper waiting to be unleashed",
         },
         232520: {
@@ -590,7 +590,7 @@ const resultsData = {
                 Science: "Absent",
             },
 
-            teacherMessage1: "Is test me aap  absent the. Yaad rakho, har test ek mauka hai apni progress samajhne ka. Regular rehna hi success ki key hai — agli baar koi bhi test miss na ho.",
+            teacherMessage1: "Is test me aap  absent the. Yaad rakho, har test ek mauka hai apni progress samajhne ka. Regular rehna hi success ki key hai — agli baar koi bhi test miss na ho.",
             teacherMessage2: "Inside you is a topper waiting to be unleashed",
         },
     },
@@ -615,6 +615,72 @@ const resultsData = {
                 SST: 100,
             },
         },
+    },
+    "Sambhav 1 - 2026 ( Class X )": {
+        214201: {
+            name: "Chetna Kumawat",
+            marks: {
+                Mathematics: "62 / 100",
+                Science: "51 / 100",
+                Total: "113 / 200"
+            }
+        },
+        214202: {
+            name: "Dipendra Singh",
+            marks: {
+                Mathematics: "55 / 100",
+                Science: "62 / 100",
+                Total: "117 / 200"
+            }
+        },
+        214203: {
+            name: "Manshi Prajapat",
+            marks: {
+                Mathematics: "40 / 100",
+                Science: "72 / 100",
+                Total: "112 / 200"
+            }
+        },
+        214204: {
+            name: "Hitansh Prajapat",
+            marks: {
+                Mathematics: "65 / 100",
+                Science: "80 / 100",
+                Total: "145 / 200"
+            }
+        },
+        214205: {
+            name: "Priyanshi Kumawat",
+            marks: {
+                Mathematics: "60 / 100",
+                Science: "80 / 100",
+                Total: "140 / 200"
+            }
+        },
+        214206: {
+            name: "Nidhi Sharma",
+            marks: {
+                Mathematics: "70 / 100",
+                Science: "65 / 100",
+                Total: "135 / 200"
+            }
+        },
+        214207: {
+            name: "Sireen Khatri",
+            marks: {
+                Mathematics: "15 / 100",
+                Science: "15 / 100",
+                Total: "30 / 200"
+            }
+        },
+        214208: {
+            name: "Yogendra Kumawat",
+            marks: {
+                Mathematics: "40 / 100",
+                Science: "10 / 100",
+                Total: "50 / 200"
+            }
+        }
     },
 };
 
